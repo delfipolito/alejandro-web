@@ -1,0 +1,146 @@
+/*FONTS*/
+@font-face {
+ font-family: 'sanFrancisco';
+ src: url('../font/AppleSDGothicNeo-Regular.otf');
+}
+@font-face {
+ font-family: 'sanFranciscoBold';
+ src: url('../font/AppleSDGothicNeo-Bold.otf');
+}
+
+html, body, section {
+	height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+section{
+	position: relative;
+
+}
+.centered{
+  text-align: center;
+}
+.sanFrancisco{
+  font-family: 'sanFrancisco';
+}
+
+.section{
+	height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.intersection{
+  background-color: white;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+#home{
+	background-image: url('../images/home.png');
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	
+  background-color: #293B47;
+  height: calc(100% - 90px);
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.arrow{
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  left:calc(50% - 50px);
+  left: -webkit-calc(50% - 50px);
+  left: -moz-calc(50% - 50px);
+  margin: auto;
+}
+#contact{
+  background-color: white;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#contact{
+  background-color: white;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.form{
+  padding:30px!important;
+}
+.formButton{
+  background-color: #293B47;
+}
+.formButton:hover , .formButton:focus{
+  background-color: #293B47;
+}
+.title{
+  font-family: 'sanFranciscoBold';
+  font-size: 25px;
+  color: #293B47;
+}
+.subtitle{
+  font-family: 'sanFranciscoBold';
+  font-size: 17px;
+  color: #293B47;
+}
+.contactText{
+  font-family: 'sanFrancisco';
+  font-size: 18px;
+  color: #293B47;
+}
+
+#aesthetic{
+  background-color: white;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.titleCol{
+  background-color: #293B47;
+}
+.superTitles{
+  color: white;
+  font-family: 'sanFranciscoBold';
+  font-size: 35px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+.titleRow{
+  margin-top: 25px;
+  background-color: #293B47;
+}
+.parigraphRow{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#repairer{
+  background-color: white;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#noSurgical{
+  background-color: white;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
