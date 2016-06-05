@@ -5054,17 +5054,17 @@ nav ul a span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%; 
+  width: 90%;
   margin-top: 30px;}
 
 @media only screen and (min-width : 601px) {
   .container {
-    width: 85%; 
+    width: 85%;
     margin-top: 30px;} }
 
 @media only screen and (min-width : 993px) {
   .container {
-    width: 90%; 
+    width: 90%;
     margin-top: 30px;} }
 
 .container .row {
@@ -5456,7 +5456,7 @@ nav {
     display: inline-block;
     font-size: 2.1rem;
     padding: 0;
-    white-space: nowrap; 
+    white-space: nowrap;
       margin-top: 5px;
     margin-left: 10px;}
     nav .brand-logo.center {
@@ -5473,8 +5473,8 @@ nav {
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
-        transform: translateX(-50%); 
-        margin-top: 5px!important; 
+        transform: translateX(-50%);
+        margin-top: 5px!important;
         margin-left: 0px!important; }
         nav .brand-logo.left, nav .brand-logo.right {
           padding: 0;
@@ -5548,8 +5548,8 @@ nav {
 
 @media only screen and (min-width : 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 90px;
-    line-height: 90px; }
+    height: 107px;
+    line-height: 107px; }
   .navbar-fixed {
     height: 90px; } }
 

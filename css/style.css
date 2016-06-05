@@ -39,14 +39,14 @@ section{
 }
 
 #home{
-	background-image: url('../images/home.png');
+	background-image: url('../images/foto1.jpg');
 	background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;	
+  background-size: cover;
   background-color: #293B47;
   height: calc(100% - 90px);
   min-height: 600px;
@@ -143,4 +143,20 @@ section{
   min-height: 100%;
   position: relative;
   overflow: hidden;
+}
+
+
+.modalTitle {
+    font-family: 'sanFrancisco';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #293B47;
+}
+.modalText{
+  font-family: 'sanFrancisco';
+  font-size: 18px;
+  color: #293B47;
+  margin: 3px;
+
 }

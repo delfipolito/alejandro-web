@@ -8,10 +8,11 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--Materialize Icons -->
 		<script type="text/javascript" src="js/materialize.js"></script>
 		<script type="text/javascript" src="js/home.js"></script>
+		<script type="text/javascript" src="js/mail.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/materialize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="canonical" href="http://www.example.com" />
-    
+
 	</head>
 
  	<body >
@@ -19,7 +20,7 @@
 		<nav>
 	    <div class="nav-wrapper">
 	      <a href="#!" class="brand-logo">
-	      	<img  class="navLogo" style="height:78px;"src="images/logo.png"/>
+	      	<img  class="navLogo" style="height:100px;"src="images/logo.png"/>
 	      </a>
 	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	      <ul class="right hide-on-med-and-down">
@@ -39,7 +40,7 @@
 	    </div>
 	  </nav>
     </div>
- 		
+
 
 	  <section id="home">
 	  	<img src="./images/down-arrow.png"  class="arrow">
@@ -50,16 +51,29 @@
 	  	<div class="container">
 	  		<div class="row">
 	  			<div class="col s12 m6">
-	  				<p class="title">Historia</p>
+	  				<p class="title">Experiencia</p>
 	  				<p class="subtitle">El doctor Alejandro Polito es cirujano plástico con una extensa experiencia en las últimas técnicas de cirugías aplicadas a la estética y reconstrucción que se usan en el mundo. </p>
 	  				<p class="subtitle">Ha realizado una amplia cantidad de procedimientos quirúrgicos y no quirúrgicos desde su graduación en 1985 y continúa capacitándose año tras año para brindar la mejor respuesta a sus inquietudes.</p>
 	  				<p class="subtitle">Luego de obtener el título de médico en la Facultad de medicina, Universidad del Salvador realizó la residencia completa de cirugía general y posteriormente la de cirugía plástica en el hospital Británico de Buenos Aires (1989-1992) cargos obtenidos por concurso.</p>
 	  				<p class="subtitle">Actualmente desarrolla su actividad con un equipo de trabajo conformado por cirujanos, enfermeras, asistentes, secretarias, anestesistas, dermatóloga, cosmetóloga; todos comprometidos con la excelencia, entendiendo que cada paciente es único y la atención debe ser personalizada.</p>
-	  			</div>
+						<a class="waves-effect waves-light btn modal-trigger" href="#modal1">VER MÁS</a>
+					</div>
 	  			<div class="col s12 m6" >
 	  				<img src="./images/cv2.png"  style="width:100%;">
 	  			</div>
 	  	</div>
+			<div id="modal1" class="modal">
+		    <div class="modal-content">
+		      	<p class="modalTitle">DR. ALEJANDRO POLITO</P>
+						<hr>
+						</br>
+						<p class="modalText">Miembro titular de la Sociedad de Cirugía Plástica de Buenos Aires SCPBA</p>
+						<p class="modalText">Cirujano plástico del Hospital Británico de Buenos Aires</p>
+						<p class="modalText">Miembro titular de la Asociación Argentina de Cirugía MAAC</p>
+						<p class="modalText">Miembro titular de la Asociación Médica Argentina AMA</p>
+						<hr>
+		    </div>
+		  </div>
 	  </section>
 	  <section id="2" class="intersection">
 	  </section>
@@ -149,7 +163,7 @@
 		  		</div>
 		  	</div>
 	  	</div>
-	  	
+
 	  </section>
 	  <section id="3" class="intersection">
 	  </section>
@@ -175,7 +189,8 @@
 		  		<div class="col m8 s12 offset-m0 valign">
 		  			<p class="title">FRACTURAS MAXILO FACIALES</p>
 		  			<img class="hide-on-med-and-up" src="./images/maxilo.jpg"  style="width:100%;">
-		  			
+		  			<p class="subtitle">La cirugía reconstructiva máxilofacial mejora la función y la estética de deformidades congénitas o causadas por accidentes, quemaduras y patologías en el territorio máxilofacial.</p>
+		  			<p class="subtitle">La utilización de nuevas técnicas y tecnologías ha permitido aumentar las posibilidades terapéuticas y mejorar ostensiblemente los resultados obtenidos.</p>
 		  		</div>
 		  		<div class="col m4 s12 offset-m0 valign">
 		  			<img  class="hide-on-small-only" src="./images/maxilo.jpg"  style="width:100%;">
@@ -210,7 +225,8 @@
 		  		<div class="col m8 s12 offset-m0 valign">
 		  			<p class="title">CICATRICES Y TATUAJES</p>
 		  			<img class="hide-on-med-and-up" src="./images/cicatriz.jpg"  style="width:100%;">
-		  			
+						<p class="subtitle">Durante el proceso de recuperación de una herida resultante de un accidente, una cirugía, una quemadura, o de acné, la cicatrización ocurre siempre que varias capas de la piel hayan sido afectadas. </p>
+		  			<p class="subtitle">Una vez que la cicatriz se forma, nunca desaparece, aunque puede hacerse menos visible por diversos métodos.</p>
 		  		</div>
 		  	</div>
 		  	<div class="row parigraphRow valign-wrapper">
@@ -304,11 +320,11 @@
 		  	</div>
 		  	<div class="row parigraphRow valign-wrapper">
 		  		<div class="col m4 s12 offset-m0 valign">
-		  			<img  class="hide-on-small-only" src="./images/ipl.png"  style="width:100%;">
+		  			<img  class="hide-on-small-only" src="./images/cosmiatria2.jpg"  style="width:100%;">
 		  		</div>
 		  		<div class="col m8 s12 offset-m0 valign">
 		  			<p class="title">COSMIATRÍA</p>
-		  			<img class="hide-on-med-and-up" src="./images/ipl.png"  style="width:100%;">
+		  			<img class="hide-on-med-and-up" src="./images/cosmiatria2.jpg"  style="width:100%;">
 		  			<p class="subtitle">La Cosmiatría es un área de la Dermatología que se encarga de agrupar todas las técnicas cosméticas. Es una actividad que busca darle armonía al cuerpo y al rostro. </p>
 		  			<ul class="subtitle" >
 						  <li>Tratamientos corporales (anti-celulíticos, reductores, flacidez).</li>
@@ -334,7 +350,7 @@
 	  		<div class="row">
 	  			<div class="col s12 m6" style="padding-right: 10%;">
 	  				<div class="row">
-	  					<p class="subtitle">Consultorio en Gualeguaychú</p>
+	  					<p class="subtitle">Clinica Dr. Alejandro Polito</p>
 	  					<p class="contactText"><i class="material-icons prefix">home</i><span style="position:absolute; padding-left:9px;">25 de mayo 470, Gualeguaychú, Entre Ríos</span> </p>
       				<p class="contactText"><i class="material-icons prefix">phone</i><span style="position:absolute; padding-left:9px;">(+54) (3446) 433142</span></p>
       				<hr>
@@ -377,6 +393,26 @@
 	  		</div>
 	  	</div>
 	  </section>
+
+	  <div id="modal1" class="modal">
+	    <div class="modal-content">
+	      <h4 class="title">Muchas gracias!</h4>
+	      <p  class="subtitle">Su mensaje ha sido enviado.</p>
+	    </div>
+	    <div class="modal-footer">
+	      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+	    </div>
+	  </div>
+	  <div id="modal2" class="modal bottom-sheet">
+	    <div class="modal-content">
+	      <h4 class="title">Disculpe</h4>
+	      <p class="subtitle">Se produjo un problema al enviar del mensaje.</p>
+	      <p class="subtitle">Por favor intente nuevamente.</p>
+	    </div>
+	    <div class="modal-footer">
+	      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+	    </div>
+	  </div>
   </body>
 
 </html>

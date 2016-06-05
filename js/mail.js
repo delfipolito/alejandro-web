@@ -27,8 +27,16 @@ $(document).ready(function(){
 					success:function() {
 						$('.formEmail').val('');
 						$('.formName').val('');
+						$('.formLastName').val('');
 						$('.formMessage').val('');
-						alert('Gracias, su mensaje ha sido enviado');
+						 $('#modal1').openModal();
+		      }
+		      error: function() {
+						$('.formEmail').val('');
+						$('.formName').val('');
+						$('.formLastName').val('');
+						$('.formMessage').val('');
+						 $('#modal2').openModal();
 		      }
 				});
 			}
