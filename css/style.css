@@ -1,11 +1,11 @@
 /*FONTS*/
 @font-face {
  font-family: 'sanFrancisco';
- src: url('../font/AppleSDGothicNeo-Regular.otf');
+ src: url('../font/Lato-Regular.ttf');
 }
 @font-face {
  font-family: 'sanFranciscoBold';
- src: url('../font/AppleSDGothicNeo-Bold.otf');
+ src: url('../font/Lato-Bold.ttf');
 }
 
 html, body, section {
