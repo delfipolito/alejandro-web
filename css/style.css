@@ -24,7 +24,10 @@ section{
 .sanFrancisco{
   font-family: 'sanFrancisco';
 }
-
+ .noMargin{
+   margin: 0px;
+   width: 100%;
+ }
 .section{
 	height: 100%;
   width: 100%;
@@ -159,4 +162,16 @@ section{
   color: #293B47;
   margin: 3px;
 
+}
+.brandImage{
+  height: 100px;
+}
+.seeMore{
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) { /*Para monitores xs*/
+  .brandImage{height: 80px;}
+  .experienceCol{text-align: center;}
+  .seeMore{ margin-bottom: 20px;}
 }
