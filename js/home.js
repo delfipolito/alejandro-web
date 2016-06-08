@@ -6,7 +6,11 @@ $( document ).ready(function(){
 	 $(".button-collapse").sideNav();
 	 var cont = 2;
 	 window.setInterval(function(){
-		 var background = 'url(./images/foto'+ cont + '.jpg)'
+		 if(cont==5 || cont==9 || cont==10){
+			 var background = 'url(./images/foto'+ cont + '.JPG)'
+		 }else{
+		 	 var background = 'url(./images/foto'+ cont + '.jpg)'
+		 }
 		 $('#home')
 			.animate({opacity: 0}, 'slow', function() {
 					$(this)
