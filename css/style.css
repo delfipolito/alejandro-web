@@ -1,49 +1,141 @@
 /*FONTS*/
 @font-face {
- font-family: 'sanFrancisco';
- src: url('../font/Lato-Regular.ttf');
+ font-family: 'SansRegular';
+ src: url('../fonts/Sans/SourceSansPro-Regular.ttf') format('opentype');
 }
 @font-face {
- font-family: 'sanFranciscoBold';
- src: url('../font/Lato-Bold.ttf');
+ font-family: 'SansLight';
+ src: url('../fonts/Sans/SourceSansPro-Light.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'SansBold';
+ src: url('../fonts/Sans/SourceSansPro-Bold.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'SansSemibold';
+ src: url('../fonts/Sans/SourceSansPro-Semibold.ttf') format('opentype');
 }
 
+/*GENERAL*/
+html, body{
+  min-height: 100%;
+}
 html, body, section {
-	height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-section{
-	position: relative;
-
-}
-.centered{
-  text-align: center;
-}
-.sanFrancisco{
-  font-family: 'sanFrancisco';
-}
- .noMargin{
-   margin: 0px;
-   width: 100%;
- }
-.section{
-	height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  color: black;
+  font-family: 'SansRegular';
 }
-.intersection{
-  background-color: white;
-  height: 100px;
+section{
   position: relative;
-  overflow: hidden;
+}
+.container {
+  width: 90%;
+}
+.relative {
+  position: relative;
+}
+.hidden {
+  display: none!important;
+}
+.no-padding {
+  padding: 0px!important;
+}
+.centered {
+  text-align: center;
+}
+.left-aligned {
+  text-align: left!important;
+}
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%!important;
+}
+.valign-wrapper .valign {
+  display: block;
+  text-align: center;
 }
 
+/*TITLE WITH LINE*/
+h1 {
+  margin-bottom: 10px;
+}
+.line {
+  width: 42px;
+  display: block;
+  border-top: 2px solid #4a4a4a;
+  vertical-align: top;
+  margin-bottom: 13px;
+}
+
+.line.white {
+  border-top: 2px solid #fff !important;
+}
+
+/*TEXTS*/
+h3 {
+  font-family: 'SansBold';
+  font-size: 25px;
+  display: inline;
+}
+
+/*SECTIONS*/
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.grey-section {
+  background-color: #f4f4f4;
+  color: #4a4a4a;
+}
+.black-section {
+  background-color: black;
+}
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+/*NAVBAR*/
+nav {
+  color: #4a4a4a;
+  background-color: rgba(255, 255, 255, 0.91)!important;
+}
+nav ul a {
+  color: #4a4a4a;
+  font-family: 'SansLight';
+  font-size: 16px;
+}
+nav ul a:hover {
+  background-color: rgba(255, 255, 255, 0.91)!important;
+}
+.facebook {
+  padding-top: 8px;
+}
+.logo-nav {
+  padding: 5px 15px 0;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+
+/*HOME*/
 #home{
-	background-image: url('../images/foto1.jpg');
-	background-repeat: no-repeat;
+  background-image: url('../images/fondo.png');
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   -webkit-background-size: cover;
@@ -56,123 +148,135 @@ section{
   position: relative;
   overflow: hidden;
 }
-.arrow{
-  position: absolute;
-  bottom: 0;
-  width: 100px;
-  left:calc(50% - 50px);
-  left: -webkit-calc(50% - 50px);
-  left: -moz-calc(50% - 50px);
-  margin: auto;
-}
-#contact{
-  background-color: white;
-  height: auto;
-  min-height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-#contact{
-  background-color: white;
-  height: auto;
-  min-height: 100%;
-  position: relative;
-  overflow: hidden;
+.logo-home {
+  width: 42%;
 }
 
-.form{
-  padding:30px!important;
+/*WHO WE ARE*/
+.who-we-are-photo {
+  width: 100%;
 }
-.formButton{
-  background-color: #293B47;
+.see-more-button {
+  font-family: 'SansRegular';
+  font-size: 14px;
+  border: transparent;
+  background: #e8e8e8;
+  padding: 5px 20px;
+  border-radius: 30px;
 }
-.formButton:hover , .formButton:focus{
-  background-color: #293B47;
+/*INSTALACIONES*/
+.instalaciones-img {
+  height: 400px;
+  margin: 0 25px;
 }
-.title{
-  font-family: 'sanFranciscoBold';
-  font-size: 25px;
-  color: #293B47;
-}
-.subtitle{
-  font-family: 'sanFranciscoBold';
-  font-size: 17px;
-  color: #293B47;
-}
-.contactText{
-  font-family: 'sanFrancisco';
-  font-size: 18px;
-  color: #293B47;
+.instalaciones-gallery div {
+  margin: 15px -15px;
 }
 
-#aesthetic{
-  background-color: white;
-  height: auto;
-  min-height: 100%;
-  position: relative;
-  overflow: hidden;
+/*CIRUGIA ESTETICA*/
+.treatment-section {
+  height: auto!important;
 }
-.titleCol{
-  background-color: #293B47;
+.tratamientos-card {
+  width: 256px;
+  margin: 10px 25px;
+  display: inline-block;
 }
-.superTitles{
+@media (max-width: 600px) { /*Para monitores small*/  
+  .tratamientos-card {
+    margin: 10px 25px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1100px) { /*Para monitores medium*/
+  .tratamientos-card {
+    margin: 10px 25px;
+  }
+}
+.tratamientos-card .card-content {
+  background-color: #053a63;
   color: white;
-  font-family: 'sanFranciscoBold';
-  font-size: 35px;
-  padding-top: 15px;
-  padding-bottom: 13px;
-}
-.titleRow{
-  margin-top: 25px;
-  background-color: #293B47;
-}
-.parigraphRow{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#repairer{
-  background-color: white;
-  height: auto;
-  min-height: 100%;
   position: relative;
-  overflow: hidden;
 }
-#noSurgical{
-  background-color: white;
-  height: auto;
-  min-height: 100%;
-  position: relative;
+.tratamientos-card .card-content .title {
+  font-family: 'SansSemibold';
+  font-size: 19px;
   overflow: hidden;
+  height: 28px;
+}
+.more-treatment {
+  height: 27px;
+  position: absolute;
+  top: -13px;
+}
+.transparent-button {
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
 }
 
-
-.modalTitle {
-    font-family: 'sanFrancisco';
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #293B47;
+.tratamientos-card .card-content .text {
+  font-family: 'SansLight';
+  font-size: 16px;
+  -moz-hyphens:auto;
+  -ms-hyphens:auto;
+  -webkit-hyphens:auto;
+  -o-hyphens:auto;
+  hyphens:auto;
+  word-wrap: break-word;
 }
-.modalText{
-  font-family: 'sanFrancisco';
+
+/*CONTACT*/
+.contact {
+  height: 80%;
+  margin-bottom: 0!important;
+  padding: 0!important;
+}
+.contact-info {
+  background-color: #303030;
+  color: #fff;
+  height: 100%;
+  padding-left: 4vw !important;
+  padding-right: 3vw !important;
+}
+.contact h2 {
   font-size: 18px;
-  color: #293B47;
-  margin: 3px;
+  letter-spacing: 0.5px;
+  font-family: 'SansSemibold' !important;
+  border-bottom: solid 2px;
+  padding-bottom: 13px;
+  margin-bottom: 10px;
+}
+.contact p {
+  color: #bdbdbd;
+  font-size: 17px;
+  font-family: 'SansLight' !important;
+  margin: 0;
+}
+.contact-map {
+  height: 100%;
+  padding: 0px!important;
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
 
+.estetica-gallery .slick-next, .estetica-gallery .slick-next:hover, .estetica-gallery .slick-next:focus, .estetica-gallery .slick-next:active , 
+.reparadora-gallery .slick-next, .reparadora-gallery .slick-next:hover, .reparadora-gallery .slick-next:focus, .reparadora-gallery .slick-next:active,
+.no-quirurgicos-gallery .slick-next, .no-quirurgicos-gallery .slick-next:hover, .no-quirurgicos-gallery .slick-next:focus, .no-quirurgicos-gallery .slick-next:active {
+    right: -9px;
+    background-image: url(../images/flechaderazul.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99;
+    top: -10px;
 }
-.brandImage{
-  height: 100px;
-}
-.seeMore{
-  margin-bottom: 0px;
-}
-
-@media (max-width: 767px) { /*Para monitores xs*/
-  .brandImage{height: 80px;}
-  .experienceCol{text-align: center;}
-  .seeMore{ margin-bottom: 20px;}
-  #abautMe{ height: auto;}
-}
+.estetica-gallery .slick-prev, .slick-prev:hover, .estetica-gallery .slick-prev:focus, .estetica-gallery .slick-prev:active,
+.reparadora-gallery .slick-prev, .slick-prev:hover, .reparadora-gallery .slick-prev:focus, .reparadora-gallery .slick-prev:active,
+.no-quirurgicos-gallery .slick-prev, .slick-prev:hover, .no-quirurgicos-gallery .slick-prev:focus, .no-quirurgicos-gallery .slick-prev:active {
+    right: 12px;
+    background-image: url(../images/flechaizqazul.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99 !important;
+    top: -9px !important;

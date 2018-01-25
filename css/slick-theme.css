@@ -1,0 +1,88 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list {
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+
+@font-face {
+ font-family: 'PlayfairBold';
+ src: url('../fonts/Playfair/PlayfairDisplay-Bold.ttf') format('opentype');
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 22px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'Playfair Display','PlayfairBold';
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+    opacity: 1;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev, .slick-prev:hover, .slick-prev:focus, .slick-prev:active {
+    right: 6px;
+    background-image: url("../images/flechaizqgris.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99 !important;;
+    top: 0 !important;
+}
+
+.slick-next, .slick-next:hover, .slick-next:focus, .slick-next:active{
+    right: -25px;
+    background-image: url("../images/flechadergris.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99;
+    top: 0;
+}

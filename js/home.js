@@ -1,29 +1,137 @@
 $( document ).ready(function(){
-		$(document).ready(function(){
-	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-	    $('.modal-trigger').leanModal();
-	  });
-	 $(".button-collapse").sideNav();
-	 var cont = 2;
-	 window.setInterval(function(){
-		 if(cont==5 || cont==9 || cont==10){
-			 var background = 'url(./images/foto'+ cont + '.JPG)'
-		 }else{
-		 	 var background = 'url(./images/foto'+ cont + '.jpg)'
-		 }
-		 $('#home')
-			.animate({opacity: 0}, 'slow', function() {
-					$(this)
-							.css({'background-image': background})
-							.animate({opacity: 1});
-			});
-			if(cont<10){
-				cont = cont + 1;
-			}else{
-				cont = 1;
-			}
 
-		}, 5000);
+  $(".button-collapse").sideNav();
 
+  $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+   
+  // SLIDES
+  $('.instalaciones-gallery').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 3,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+    ]
+  });
+  $('.estetica-gallery').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    centerMode: true,
+    variableWidth: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+    ]
+  });
+  $('.reparadora-gallery').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    centerMode: true,
+    variableWidth: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+    ]
+  });
 
+  $('.no-quirurgicos-gallery').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    centerMode: true,
+    variableWidth: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+    ]
+  });
 })
