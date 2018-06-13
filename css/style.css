@@ -196,6 +196,7 @@ a.anchor {
   background-color: #053a63;
   color: white;
   position: relative;
+  min-height: 196px;
 }
 .tratamientos-card .card-content .title {
   font-family: 'SansSemibold';
